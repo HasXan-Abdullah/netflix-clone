@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import './Home.scss';
 import axios from 'axios';
-import {Link} from 'react-router-dom'
-import { BiPlay } from "react-icons/bi"
-import { AiOutlinePlus } from "react-icons/ai"
+// import {Link} from 'react-router-dom'
+// import { BiPlay } from "react-icons/bi"
+// import { AiOutlinePlus } from "react-icons/ai"
 //
 const apiKey ="a1dbba14d04fdfd36d0bebc778d7dac3";
 const url ="https://api.themoviedb.org/3";
