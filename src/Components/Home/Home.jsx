@@ -14,10 +14,10 @@ const nowPlaying = "now_playing";
 const popular = "popular";
 const topRated = "top_rated";
 
-const Card = ({ img }) => <img className="card" src={img} alt="cover" />;
+const Card = ({ img }) => <img className="cardImg" src={img} alt="cover" />;
 
 const Row = ({ title, arr = [] }) => (
-    <div className="row">
+    <div className="rowMovie">
         <h2>{title}</h2>
 
         <div>

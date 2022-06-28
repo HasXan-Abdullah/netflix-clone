@@ -78,7 +78,7 @@ $bg:rgb(16,16,16);
     }
   }
   
-.row{
+.rowMovie{
     background-color: $bg;
     padding: 1rem;
     >div{
@@ -92,7 +92,7 @@ $bg:rgb(16,16,16);
         font-weight: 400;
     }
 }
-.card{
+.cardImg{
  
     width: 200px;
     cursor: pointer;
@@ -124,4 +124,38 @@ $bg:rgb(16,16,16);
         background-color: $bg;
         min-width: 8rem;
     }
+}
+@media screen and (max-width:740px) {
+
+  .banner{
+    
+    h1,
+    p {
+      color: white;
+      font-size: 1.2rem;
+      width: 100%;
+      z-index: 10;
+    }
+    p {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      word-spacing: 3px;
+      font-weight: 100;
+    }
+  >div{
+    
+    >button{
+      
+      width: 120px;
+      font-size: 15px;
+      min-height: fit-content;
+      >svg{
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+    
+  }
+
 }
