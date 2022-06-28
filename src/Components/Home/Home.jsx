@@ -42,7 +42,7 @@ const Home = () => {
 const [upcomingMovies, setUpcomingMovies] = useState();
 const [topRatedMovies, setTopratedMovies] = useState();
 const [nowPlayingMovies, setNowplayingMovies] = useState();
-const [genre, setGenre] = useState();
+// const [genre, setGenre] = useState();
   useEffect(() => {
    
     const fetchUpcoming =async()=>{
@@ -65,17 +65,17 @@ const [genre, setGenre] = useState();
      };
      
      
-     const fetchGenre =async()=>{
-      const {data:{genres},} = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
+    //  const fetchGenre =async()=>{
+    //   const {data:{genres},} = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
    
-      setGenre(genres)
-      console.log(genres)
+    //   setGenre(genres)
+    //   console.log(genres)
         
-     };
+    //  };
     fetchUpcoming()
     fetchTopRated();
     fetchNowPlaying();
-    fetchGenre();
+    // fetchGenre();
   }, []);
  
   return (
