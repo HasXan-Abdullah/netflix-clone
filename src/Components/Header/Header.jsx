@@ -26,7 +26,7 @@ const Header = () => {
           <Navbar.Collapse id="navbarScroll" >
             <Nav
              
-              style={{ maxHeight: '500px',color:'white' }}
+              
               navbarScroll
             >
               <Nav.Link  as={Link} to='/topviews' >TV Series</Nav.Link>
