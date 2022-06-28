@@ -21,7 +21,7 @@ const Header = () => {
         <Container fluid>
           <Navbar.Brand ><img  className='imgLogo' src={Logo} alt="Logo"  /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll"   >
-            <button className='menuIcon'><AiOutlineMenu/></button>
+            <span className='menuIcon'><AiOutlineMenu/></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll" >
             <Nav
