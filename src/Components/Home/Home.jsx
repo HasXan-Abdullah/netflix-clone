@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import './Home.scss';
 import axios from 'axios';
-// import {Link} from 'react-router-dom'
-// import { BiPlay } from "react-icons/bi"
-// import { AiOutlinePlus } from "react-icons/ai"
+import {Link} from 'react-router-dom'
+import { BiPlay } from "react-icons/bi"
+import { AiOutlinePlus } from "react-icons/ai"
 //
 const apiKey ="a1dbba14d04fdfd36d0bebc778d7dac3";
 const url ="https://api.themoviedb.org/3";
@@ -65,22 +65,22 @@ const [nowPlayingMovies, setNowplayingMovies] = useState();
      };
      
      
-    //  const fetchGenre =async()=>{
-    //   const {data:{genres},} = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
+     const fetchGenre =async()=>{
+      const {data:{genres},} = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
    
-    //   setGenre(genres)
-    //   console.log(genres)
+      setGenre(genres)
+      console.log(genres)
         
-    //  };
+     };
     fetchUpcoming()
     fetchTopRated();
     fetchNowPlaying();
-    // fetchGenre();
+    fetchGenre();
   }, []);
  
   return (
    <section className='home'>
-    {/* <div
+    <div
                 className="banner"
                 style={{
                     backgroundImage: topRatedMovies[0]
@@ -95,18 +95,18 @@ const [nowPlayingMovies, setNowplayingMovies] = useState();
                     <button><BiPlay /> Play  </button>
                     <button>My List <AiOutlinePlus /> </button>
                 </div>
-            </div> */}
+            </div>
     <Row  title={"Upcoming Movies"} arr={upcomingMovies}/>
     <Row  title={"Top Rated Movies"} arr={topRatedMovies}/>
     <Row  title={"Now Playing Movies"} arr={nowPlayingMovies}/>
    
-    {/* <div className="gerneBox">
+    <div className="gerneBox">
       {genre.map((item)=>(<Link key={item.id} to={`/genre/${item.id}`}>{item.name}</Link>)
         
       )
        
       }
-    </div> */}
+    </div>
    </section>
   )
 }
