@@ -42,7 +42,7 @@ const Home = () => {
 const [upcomingMovies, setUpcomingMovies] = useState();
 const [topRatedMovies, setTopratedMovies] = useState();
 const [nowPlayingMovies, setNowplayingMovies] = useState();
-// const [genre, setGenre] = useState();
+const [genre, setGenre] = useState();
   useEffect(() => {
    
     const fetchUpcoming =async()=>{
