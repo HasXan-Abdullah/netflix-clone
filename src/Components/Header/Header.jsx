@@ -29,11 +29,11 @@ const Header = () => {
               style={{ maxHeight: '500px',color:'white' }}
               navbarScroll
             >
-              <Nav.Link  id='links' as={Link} to='/topviews' >TV Series</Nav.Link>
-              <Nav.Link id='links'  as={Link} to='/topviews'>Movies</Nav.Link>
-              <Nav.Link id='links'  as={Link} to='/topviews'>Recently Viewed</Nav.Link>
-              <Nav.Link id='links'  as={Link} to='/topviews'>My List</Nav.Link>
-              <Nav.Item id='links'  as={Link} to='/topviews'> <span className='svgSearch'><ImSearch/></span></Nav.Item>
+              <Nav.Link  style={{color:'white'}} as={Link} to='/topviews' >TV Series</Nav.Link>
+              <Nav.Link style={{color:'white'}} as={Link} to='/topviews'>Movies</Nav.Link>
+              <Nav.Link style={{color:'white'}}  as={Link} to='/topviews'>Recently Viewed</Nav.Link>
+              <Nav.Link style={{color:'white'}}  as={Link} to='/topviews'>My List</Nav.Link>
+              <Nav.Link style={{color:'white'}}  as={Link} to='/topviews'> <span className='svgSearch'><ImSearch/></span></Nav.Link>
 
             
               
